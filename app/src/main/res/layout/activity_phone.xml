@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    >
 
     <EditText
         android:id="@+id/etPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="please input phone"
-        android:inputType="phone">
+        android:ems="11"
+        android:hint="@string/please_input_phone"
+        android:inputType="phone"
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
-        <requestFocus />
     </EditText>
 
     <Button
         android:id="@+id/btnCall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="call" />
+        android:text="@string/call"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone"
+        />
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
