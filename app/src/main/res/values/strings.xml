@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">EspressoDemo</string>
     <string name="call">打电话</string>
+    <string name="jump">跳转</string>
     <string name="please_input_phone">please input phone</string>
 </resources>

@@ -23,6 +23,10 @@ class PhoneActivity : AppCompatActivity() {
         btnCall.setOnClickListener {
             callPhone(etPhone.text.toString())
         }
+        jumpTwo.setOnClickListener({
+            startActivity(Intent(this, TwoActivity::class.java))
+        }
+        )
     }
 
     private fun callPhone(number: String) {
